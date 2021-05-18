@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+    <title> Cadastro de usuários </title>
+<meta name="author" content="Jefferson Miranda Soares">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jqery.mask.min.js"></script>
+</head>
+<body>
+<h3> Cadastro de usuários </h3>
+<hr>
+<form>
+<div class="generica">
+    <fieldset>
+    <div class="primaria">
+    <label for="nome">Nome</label>
+<input type="text" id="nome-usuario" name="Nome" required="obrigatório" maxlength="25">
+</div>
+<div class="primaria">
+<label for="cpf">CPF</label>
+<input type="text" id="cpf" name="cpf" required="obrigatório" maxlength="14">
+</div>
+<div class="primaria">
+<label for="rg">RG</label>
+<input type="text" name="rg" id="rg" required="obrigatório"> 
+</div>
+<div class="primaria">
+<label for="sexo">Sexo</label>
+<select name="sexo" id="sexo" required="obrigatório">
+<option>Masculino</option>
+<option>Feminino</option>
+</select>
+</div>
+<div class="primaria">
+<label for="endereco">Endereço</label>
+<input type="text" name=endereco" id="endereco" required="obrigatório">
+</div>
+<div class="primaria">
+<label for="numero">Número</label>
+<input type="number" name="número" id="end-numero" required="obrigatório">
+</div>
+<div class="primaria">
+<label for="bairro">Bairro</label>
+<input type="text" name="bairro" id="bairro" required="obrigatório">
+</div>
+<div class="primaria">
+<label for="cidade">Cidade</label>
+<input type="text" name="cidade" id="cidade" required="obrigatório">
+</div>
+<div class="primaria">
+<label for="estado">Estado</label>
+<input type="text" name="Estado" id="estado" required="obrigatório">
+</div>
+<div class="primaria">
+<label for="cep">CEP</label>
+<input type="text" name="CEP" id="cep" required="obrigatório">
+</div>
+<div class="primaria">
+<label for="telefone">Telefone</label>
+<input type="tel" name="telefone" id="telefone" required="obrigatório">
+</div>
+<div class="primaria">
+<label for="celular">Celular</label>
+<input type="tel" name="Celular" id="celular" required="obrigatório">
+</div>
+<input type="submit" name="Enviar" id="enviar">
+</fieldset>
+</div>
+</form>
+<script> 
+$(function(){ $("#cpf").mask("000.000.000-00");});
+</script>
+</body>
+</html>
