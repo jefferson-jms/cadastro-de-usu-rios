@@ -10,6 +10,18 @@ background:url("itau.png");
       background-size: cover;
     }
 
+    h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+      
+      p {
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 1px;
+    text-align: center;  
+    }
+      
 form {
 margin: 0 auto;    
 width: 400px;
@@ -39,11 +51,19 @@ textarea {
     vertical-align: top;
     height: 5em;
 }
-.submit {
+#enviar {
     padding-left: 90px; 
-background-color: #bebebe;
-font-color: #bebebe;
+background-color: green;
+font-color: red;
 }
-submit {
+#enviar {
     margin-left: .5em;
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #bebebe;
 }
