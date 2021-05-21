@@ -14,14 +14,17 @@
 
 </head>
 <body>
-<h3> Cadastro de usuários </h3>
+    <div id="generica">
+    
+        <h1> Seja muito bem-vindo(a)! </h1>
+<br>
+<p> Preencha todos os campos para que possamos realizar o seu cadastro pessoal. </p>
 <hr>
-<div id="generica">
 <form>
     <fieldset>
     <div class="primaria">
     <label for="nome">Nome</label>
-<input type="text" id="nome-usuario" name="Nome" required="obrigatório" maxlength="25">
+<input type="text" id="nome" name="Nome" required="obrigatório" minlength="3" maxlength="25">
 </div>
 <div class="primaria">
 <label for="cpf">CPF</label>
@@ -70,11 +73,14 @@
 <label for="celular">Celular</label>
 <input type="text" name="Celular" id="celular" required="obrigatório" class="form-control">
 </div>
-<input type="submit" name="Enviar" id="enviar">
+<input type="submit" name="Enviar" id="enviar" )" onclick="validarForm()">
 </fieldset>
-</div>
 </form>
 
+
+
 <script src="assets/js/script.js"></script>
+<script src="assets/js/validar-cadastro.js"></script>
+</div>
 </body>
 </html>
