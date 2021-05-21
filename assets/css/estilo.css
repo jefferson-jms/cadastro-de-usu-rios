@@ -4,7 +4,7 @@
   
   #generica {
       position: relative;
-      height: 100vh;
+      height: 200vh;
       width: 100vw;
 background:url("itau.png");
       background-size: cover;
@@ -51,6 +51,7 @@ textarea {
     vertical-align: top;
     height: 5em;
 }
+
 #enviar {
     padding-left: 90px; 
 background-color: green;
@@ -60,10 +61,4 @@ font-color: red;
     margin-left: .5em;
 }
 
-footer {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-    background: #bebebe;
-}
+
